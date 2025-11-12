@@ -1,0 +1,109 @@
+.campanies {
+  padding: 3rem 0;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  padding: 1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover {
+    transform: translateY(-15px) scale(1.15);
+    
+    .tech-icon {
+      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.25));
+      animation: pulse-rotate 0.6s ease-in-out;
+    }
+    
+    .tech-name {
+      opacity: 1;
+      color: #000;
+      font-weight: 700;
+    }
+  }
+}
+
+.tech-icon {
+  font-size: 8rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  @media (max-width: 992px) {
+    font-size: 7rem;
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 6rem;
+  }
+  
+  @media (max-width: 576px) {
+    font-size: 5rem;
+  }
+}
+
+.fa-react {
+  color: #61DAFB;
+}
+
+.fa-python {
+  color: #3776AB;
+}
+
+.fa-flask {
+  color: #000000;
+}
+
+.fa-js-square {
+  color: #F7DF1E;
+}
+
+.fa-node-js {
+  color: #339933;
+}
+
+.fa-leaf {
+  color: #47A248;
+}
+
+.fa-html5 {
+  color: #E34F26;
+}
+
+.fa-css3-alt {
+  color: #1572B6;
+}
+
+.fa-git-alt {
+  color: #F05032;
+}
+
+.tech-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+  text-align: center;
+  
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+}
+
+@keyframes pulse-rotate {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.2) rotate(-8deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(8deg);
+  }
+}
