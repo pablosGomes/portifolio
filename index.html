@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Patrix, Bootstrap 5 Landing Page</title>
+    <title>Pablo de Souza Gomes - Portfólio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
@@ -26,7 +26,8 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
           <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
           <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li>
           <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
@@ -34,7 +35,7 @@
           </li>
         </ul>
         <button type="button" class="rounded-pill btn-rounded">
-          +1 728365413
+          (55) 11 95666-0506
           <span>
             <i class="fas fa-phone-alt"></i>
           </span>
@@ -53,13 +54,12 @@
       <!-- START THE CONTENT FOR THE INTRO  -->
       <div class="col-md-6 intros text-start">
         <h1 class="display-2">
-          <span class="display-2--intro">Hey!, I'm Patrick</span>
+          <span class="display-2--intro">Olá! Sou Pablo de Souza Gomes</span>
           <span class="display-2--description lh-base">
-            this is a multi-purpose responsive layout created with bootstrap v5. 
-            (here your can place your description text)
+            Sou um desenvolvedor Full Stack com experiência em criação de soluções digitais completas — desde o front-end moderno até o back-end robusto. Tenho foco em desenvolver interfaces intuitivas, sistemas escaláveis e aplicações eficientes.
           </span>
         </h1>
-        <button type="button" class="rounded-pill btn-rounded">Get in Touch
+        <button type="button" class="rounded-pill btn-rounded" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Entre em Contato
           <span><i class="fas fa-arrow-right"></i></span>
         </button>
       </div>
@@ -88,7 +88,7 @@
   <section id="campanies" class="campanies">
     <div class="container">
       <div class="row text-center">
-        <h4 class="fw-bold lead mb-3">Trusted by campanies like</h4>
+        <h4 class="fw-bold lead mb-3">Tecnologias que utilizo</h4>
         <div class="heading-line mb-5"></div>
       </div>
     </div>
@@ -130,12 +130,50 @@
   </section>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                           START SECTION SKILLS - THE SKILLS SECTION
+//////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold skills__title">Habilidades</h1>
+      <div class="heading-line"></div>
+    </div>
+    <div class="skills__container">
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fab fa-react"></i></div>
+        <div class="skill-name">React</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fab fa-python"></i></div>
+        <div class="skill-name">Python</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fas fa-server"></i></div>
+        <div class="skill-name">Flask</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fas fa-database"></i></div>
+        <div class="skill-name">MongoDB</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+        <div class="skill-name">Vite</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon"><i class="fab fa-js"></i></div>
+        <div class="skill-name">JavaScript</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////
                          START SECTION 4 - THE SERVICES  
 ///////////////////////////////////////////////////////////////////////////////////////////////////-->
 <section id="services" class="services">
   <div class="container">
     <div class="row text-center">
-      <h1 class="display-3 fw-bold">Our Services</h1>
+      <h1 class="display-3 fw-bold">Meus Serviços</h1>
       <div class="heading-line mb-1"></div>
     </div>
   <!-- START THE DESCRIPTION CONTENT  -->
@@ -143,16 +181,14 @@
       <div class="col-md-6 border-right">
         <div class="bg-white p-3">
           <h2 class="fw-bold text-capitalize text-center">
-            Our Services Range From Initial Design To Deployment Anywhere Anytime
+            Desenvolvimento Full Stack de Soluções Completas
           </h2>
         </div>
       </div>
       <div class="col-md-6">
         <div class="bg-white p-4 text-start">
           <p class="fw-light">
-            Lorem ipsum dolor sit amet consectetur architecto magni, 
-            dicta maxime laborum temporibus dolorem esse doloremque illo quas nisi enim molestias. 
-            Tempore ducimus molestiae in dolore enim.
+            Ofereço serviços completos de desenvolvimento, desde a criação de interfaces modernas até a implementação de sistemas robustos e escaláveis. Meu objetivo é transformar ideias em projetos funcionais e impactantes.
           </p>
         </div>
       </div>
@@ -165,14 +201,12 @@
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
         <div class="services__content">
-          <div class="icon d-block fas fa-paper-plane"></div>
-          <h3 class="display-3--title mt-1">Marketing</h3>
+          <div class="icon d-block fas fa-code"></div>
+          <h3 class="display-3--title mt-1">Desenvolvimento Front-End</h3>
           <p class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
-             doloremque autem quibusdam blanditiis harum alias hic accusantium 
-             maxime atque ratione magni repellat?
+            Criação de interfaces modernas, responsivas e performáticas usando React, Tailwind e Vite. Foco em usabilidade, design limpo e experiência fluida para o usuário final.
           </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+          <button type="button" class="rounded-pill btn-rounded border-primary">Saiba mais
             <span><i class="fas fa-arrow-right"></i></span>
           </button>
         </div>
@@ -192,14 +226,12 @@
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
         <div class="services__content">
-          <div class="icon d-block fas fa-code"></div>
-          <h3 class="display-3--title mt-1">web development</h3>
+          <div class="icon d-block fas fa-server"></div>
+          <h3 class="display-3--title mt-1">Desenvolvimento Back-End</h3>
           <p class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
-             doloremque autem quibusdam blanditiis harum alias hic accusantium 
-             maxime atque ratione magni repellat?
+            Construção de APIs e sistemas sólidos com Flask e MongoDB, garantindo segurança, escalabilidade e integração eficiente entre as camadas da aplicação.
           </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+          <button type="button" class="rounded-pill btn-rounded border-primary">Saiba mais
             <span><i class="fas fa-arrow-right"></i></span>
           </button>
         </div>
@@ -209,14 +241,12 @@
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
         <div class="services__content">
-          <div class="icon d-block fas fa-cloud-upload-alt"></div>
-          <h3 class="display-3--title mt-1">cloud hosting</h3>
+          <div class="icon d-block fas fa-plug"></div>
+          <h3 class="display-3--title mt-1">Integrações e Automação</h3>
           <p class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
-             doloremque autem quibusdam blanditiis harum alias hic accusantium 
-             maxime atque ratione magni repellat?
+            Implementação de integrações com serviços externos, como gateways de pagamento (Stripe), bancos de dados e APIs personalizadas. Automatizo processos para otimizar tempo e reduzir falhas.
           </p>
-          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+          <button type="button" class="rounded-pill btn-rounded border-primary">Saiba mais
             <span><i class="fas fa-arrow-right"></i></span>
           </button>
         </div>
@@ -237,9 +267,9 @@
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
   <div class="container">
     <div class="row text-center text-white">
-      <h1 class="display-3 fw-bold">Testimonials</h1>
+      <h1 class="display-3 fw-bold">Depoimentos</h1>
       <hr style="width: 100px; height: 3px; " class="mx-auto">
-      <p class="lead pt-1">what our clients are saying</p>
+      <p class="lead pt-1">O que meus clientes dizem</p>
     </div>
 
     <!-- START THE CAROUSEL CONTENT  -->
@@ -377,9 +407,9 @@
 <section id="faq" class="faq">
   <div class="container">
     <div class="row text-center">
-      <h1 class="display-3 fw-bold text-uppercase">faq</h1>
+      <h1 class="display-3 fw-bold text-uppercase">Perguntas Frequentes</h1>
       <div class="heading-line"></div>
-      <p class="lead">frequently asked questions, get knowledge befere hand</p>
+      <p class="lead">Dúvidas frequentes, obtenha conhecimento antecipado</p>
     </div>
     <!-- ACCORDION CONTENT  -->
     <div class="row mt-5">
@@ -450,10 +480,10 @@
 <section id="portfolio" class="portfolio">
   <div class="container">
     <div class="row text-center mt-5">
-      <h1 class="display-3 fw-bold text-capitalize">Latest work</h1>
+      <h1 class="display-3 fw-bold text-capitalize">Meus Projetos</h1>
       <div class="heading-line"></div>
       <p class="lead">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro temporibus distinctio.
+        Conheça alguns dos projetos que desenvolvi, demonstrando minha experiência em full stack development.
       </p>
     </div>
     <!-- FILTER BUTTONS  -->
@@ -694,11 +724,9 @@
           connect with us on social media
         </div>
         <div class="col-lg-7 col-md-6">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/pablosGomes" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/pablosouzagomes" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:pablosouzagomes14@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
     </div>
@@ -708,10 +736,10 @@
   <div class="container mt-5">
     <div class="row text-white justify-content-center mt-3 pb-3">
       <div class="col-12 col-sm-6 col-lg-6 mx-auto">
-        <h5 class="text-capitalize fw-bold">Campany name</h5>
+        <h5 class="text-capitalize fw-bold">Pablo de Souza Gomes</h5>
         <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
         <p class="lh-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex obcaecati blanditiis reprehenderit ab mollitia voluptatem consectetur?
+          Desenvolvedor Full Stack especializado em criar soluções digitais completas, desde interfaces modernas até sistemas escaláveis. Transformando ideias em projetos funcionais e impactantes.
         </p>
       </div>
       <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
@@ -735,13 +763,12 @@
         </ul>
       </div>
       <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-        <h5 class="text-capitalize fw-bold">contact</h5>
+        <h5 class="text-capitalize fw-bold">Contato</h5>
         <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
         <ul class="list-inline campany-list">
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="mailto:pablosouzagomes14@gmail.com">pablosouzagomes14@gmail.com</a></li>
+          <li><a href="tel:(55)1195666-0506">(55) 11 95666-0506</a></li>
+          <li><a href="https://github.com/pablosGomes" target="_blank">GitHub</a></li>
         </ul>
       </div>
     </div>
@@ -753,9 +780,7 @@
       <div class="row text-center text-white">
         <div class="col-12">
           <div class="footer-bottom__copyright">
-            &COPY; Copyright 2021 <a href="#">Company</a> | Created by <a href="http://codewithpatrick.com" target="_blank">Muriungi</a><br><br>
-
-            Distributed by <a href="http://themewagon.com" target="_blank">ThemeWagon</a>
+            &COPY; Copyright 2025 <a href="#">Pablo de Souza Gomes</a> | Desenvolvido com dedicação e paixão por código
           </div>
         </div>
       </div>
