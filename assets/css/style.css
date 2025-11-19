@@ -11213,3 +11213,76 @@ textarea.form-control-lg {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* Tech Stack Icons Styles */
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-10px);
+}
+
+.tech-icon-svg {
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover .tech-icon-svg {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+}
+
+.tech-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #212529;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover .tech-name {
+  color: #9926f0;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .tech-icon-svg {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .tech-item:hover .tech-icon-svg {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .tech-name {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-icon-svg {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .tech-item:hover .tech-icon-svg {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .tech-name {
+    font-size: 0.75rem;
+  }
+}
